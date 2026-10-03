@@ -35,8 +35,7 @@ export const processSteps = [
 ];
 
 export const email = "AyebCreative@gmail.com";
-export const siteUrl =
-  process.env.NEXT_PUBLIC_SITE_URL || "https://ayebcreative.com";
+export { siteUrl } from "./site-url";
 export const socialLinks = [
   { label: "LinkedIn", href: process.env.NEXT_PUBLIC_LINKEDIN_URL },
   { label: "Instagram", href: process.env.NEXT_PUBLIC_INSTAGRAM_URL },

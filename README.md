@@ -20,7 +20,7 @@ npm run build
 npm start
 ```
 
-Browser checks: run `npx playwright install chromium` once, then `npm test`. The 40 checks cover all eleven pages at seven viewport widths (320, 375, 390, 768, 1024, 1280 and 1440px), filters, featured work, project navigation, legacy redirects, image loading, metadata, keyboard navigation, reduced motion and accessibility. Inquiry checks cover service preselection, multiple selections, budget and timeline preferences, required-field validation, draft contents, submitting/success/error states and the delivery adapter. Success and delivery failures are mocked; the suite sends no external inquiries. Run it with `INQUIRY_ENDPOINT` unset. Screenshots are saved in `artifacts/` for visual review.
+Browser checks: run `npx playwright install chromium` once, then `npm test`. The 43 checks cover all eleven pages at seven viewport widths (320, 375, 390, 768, 1024, 1280 and 1440px), filters, featured work, project navigation, legacy redirects, image loading, metadata, keyboard navigation, reduced motion and accessibility. Sitemap checks validate XML, canonical URLs, reachable routes, robots and production-origin configuration. Inquiry checks cover service preselection, multiple selections, budget and timeline preferences, required-field validation, draft contents, submitting/success/error states and the delivery adapter. Success and delivery failures are mocked; the suite sends no external inquiries. Run it with `INQUIRY_ENDPOINT` unset. Screenshots are saved in `artifacts/` for visual review.
 
 ## Content and design
 
@@ -92,7 +92,7 @@ The palette is defined as four source tokens in `app/globals.css`. Neutral rules
 
 ## Before deployment
 
-Copy `.env.example` to `.env.local` and set the verified production origin. The `ayebcreative.com` fallback is a placeholder; domain ownership has not been verified. This origin controls canonical URLs, Open Graph metadata, structured data and the sitemap. Set the three verified social profile URLs to activate those footer links; unconfigured profiles render as plain labels.
+Copy `.env.example` to `.env.local`. The current production origin is `https://ayebcreative.vercel.app`, also used as the fallback in `lib/site-url.ts`. Set `NEXT_PUBLIC_SITE_URL` to this value in Vercel's **Production** environment; replace any old `https://ayebcreative.com` value. This shared origin controls canonical URLs, Open Graph metadata, structured data, robots and the sitemap. Only change it when a custom domain is connected and verified. Set the three verified social profile URLs to activate those footer links; unconfigured profiles render as plain labels.
 
 The inquiry form currently prepares an email draft addressed to AyebCreative@gmail.com. It does not deliver email, persist inquiries or claim receipt. Visitors explicitly open the draft and send it themselves, or copy the inquiry into webmail. See the integration instructions below before enabling online submission.
 
@@ -100,7 +100,7 @@ The inquiry form currently prepares an email draft addressed to AyebCreative@gma
 
 | Variable                    | When required                                    | Purpose                                                                                                                                              |
 | --------------------------- | ------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `NEXT_PUBLIC_SITE_URL`      | Before production build                          | Verified HTTPS origin, without a trailing slash; used for canonical URLs, sharing metadata, robots and sitemap. The example domain is a placeholder. |
+| `NEXT_PUBLIC_SITE_URL`      | Set explicitly for production                    | `https://ayebcreative.vercel.app` until a custom domain is verified. Must be a public HTTPS origin with no path, query or fragment. A trailing slash is normalized. |
 | `INQUIRY_ENDPOINT`          | For online inquiry delivery                      | HTTPS endpoint implementing the acknowledgment contract below. Leave empty to keep the honest email-draft fallback.                                  |
 | `INQUIRY_API_KEY`           | If the selected endpoint requires authentication | Server-only bearer token; store it in the hosting provider's secret settings.                                                                        |
 | `NEXT_PUBLIC_LINKEDIN_URL`  | To activate LinkedIn links                       | Verified studio profile URL.                                                                                                                         |
@@ -108,6 +108,12 @@ The inquiry form currently prepares an email draft addressed to AyebCreative@gma
 | `NEXT_PUBLIC_FACEBOOK_URL`  | To activate Facebook links                       | Verified studio profile URL.                                                                                                                         |
 
 `.gitignore` excludes `.env*` and permits only `.env.example`. Keep real values in `.env.local` or the host's environment settings. Public variables are embedded at build time; rebuild when changing them. Never put real credentials in source, examples or documentation.
+
+### Sitemap deployment verification
+
+`app/sitemap.ts` generates `/sitemap.xml` through Next.js's metadata route. It includes the five main pages and every project in `data/projects.ts` (currently 11 URLs). `app/robots.ts` allows crawling and references the same origin's sitemap. There is no separate static sitemap to upload.
+
+After correcting `NEXT_PUBLIC_SITE_URL`, **redeploy production**: these routes and page metadata are generated during the build, so changing a Vercel variable alone does not update an existing deployment. Verify that `https://ayebcreative.vercel.app/sitemap.xml` returns HTTP 200, `application/xml`, and only URLs on the production origin. Check `https://ayebcreative.vercel.app/robots.txt` references that exact sitemap, and that page canonical URLs agree. Then resubmit `sitemap.xml` in the Search Console property for `https://ayebcreative.vercel.app/`. An HTTP 200 from a manual check does not by itself confirm Google's latest fetch status.
 
 ### Launch checklist
 
