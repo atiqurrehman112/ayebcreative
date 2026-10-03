@@ -1,0 +1,254 @@
+{
+  "form": {
+    "application-01": {
+      "src": "/projects/form/application-01.jpg?v=4215d41ae61d",
+      "width": 1536,
+      "height": 1024
+    },
+    "application-02": {
+      "src": "/projects/form/application-02.jpg?v=c35f2eb3ed76",
+      "width": 1536,
+      "height": 1024
+    },
+    "cover": {
+      "src": "/projects/form/cover.jpg?v=5aa1474a7a34",
+      "width": 1536,
+      "height": 1024
+    },
+    "detail-01": {
+      "src": "/projects/form/detail-01.jpg?v=21fe636cf518",
+      "width": 1536,
+      "height": 1024
+    },
+    "detail-02": {
+      "src": "/projects/form/detail-02.jpg?v=e06f42b16fb8",
+      "width": 1536,
+      "height": 1024
+    },
+    "hero": {
+      "src": "/projects/form/hero.jpg?v=0c95f0740894",
+      "width": 1536,
+      "height": 1024
+    },
+    "identity": {
+      "src": "/projects/form/identity.jpg?v=a3153b1628fb",
+      "width": 1536,
+      "height": 1024
+    },
+    "social": {
+      "src": "/projects/form/social.jpg?v=2545063da21b",
+      "width": 1536,
+      "height": 1024
+    }
+  },
+  "kova": {
+    "application-01": {
+      "src": "/projects/kova/application-01.jpg?v=d53b1c529ca5",
+      "width": 1536,
+      "height": 1024
+    },
+    "application-02": {
+      "src": "/projects/kova/application-02.jpg?v=43d92c2d0867",
+      "width": 1536,
+      "height": 1024
+    },
+    "cover": {
+      "src": "/projects/kova/cover.jpg?v=ff1df3e12ff6",
+      "width": 1536,
+      "height": 1024
+    },
+    "detail-01": {
+      "src": "/projects/kova/detail-01.jpg?v=3dc255ff8448",
+      "width": 1536,
+      "height": 1024
+    },
+    "detail-02": {
+      "src": "/projects/kova/detail-02.jpg?v=79ba14c6667b",
+      "width": 1536,
+      "height": 1024
+    },
+    "hero": {
+      "src": "/projects/kova/hero.jpg?v=0aa77e861d3a",
+      "width": 1536,
+      "height": 1024
+    },
+    "identity": {
+      "src": "/projects/kova/identity.jpg?v=be376739ccc6",
+      "width": 1536,
+      "height": 1024
+    },
+    "social": {
+      "src": "/projects/kova/social.jpg?v=2dd5a9bfab2a",
+      "width": 1536,
+      "height": 1024
+    }
+  },
+  "nexa": {
+    "application-01": {
+      "src": "/projects/nexa/application-01.jpg?v=3fa84a92234e",
+      "width": 1536,
+      "height": 1024
+    },
+    "application-02": {
+      "src": "/projects/nexa/application-02.jpg?v=223807ede4ac",
+      "width": 1536,
+      "height": 1024
+    },
+    "cover": {
+      "src": "/projects/nexa/cover.jpg?v=73226e0937e4",
+      "width": 1536,
+      "height": 1024
+    },
+    "detail-01": {
+      "src": "/projects/nexa/detail-01.jpg?v=875f333265ae",
+      "width": 1536,
+      "height": 1024
+    },
+    "detail-02": {
+      "src": "/projects/nexa/detail-02.jpg?v=103430a96dd0",
+      "width": 1536,
+      "height": 1024
+    },
+    "hero": {
+      "src": "/projects/nexa/hero.jpg?v=3c42ed53a006",
+      "width": 1536,
+      "height": 1024
+    },
+    "identity": {
+      "src": "/projects/nexa/identity.jpg?v=e8264e90a703",
+      "width": 1536,
+      "height": 1024
+    },
+    "social": {
+      "src": "/projects/nexa/social.jpg?v=597891b35f15",
+      "width": 1536,
+      "height": 1024
+    }
+  },
+  "nova": {
+    "application-01": {
+      "src": "/projects/nova/application-01.jpg?v=f3ac4da3331e",
+      "width": 1672,
+      "height": 941
+    },
+    "application-02": {
+      "src": "/projects/nova/application-02.jpg?v=d430168ad8dd",
+      "width": 1672,
+      "height": 941
+    },
+    "cover": {
+      "src": "/projects/nova/cover.jpg?v=5886f3c6073d",
+      "width": 1672,
+      "height": 941
+    },
+    "detail-01": {
+      "src": "/projects/nova/detail-01.jpg?v=4a5ad652e753",
+      "width": 1672,
+      "height": 941
+    },
+    "detail-02": {
+      "src": "/projects/nova/detail-02.jpg?v=1c8cb5f62d7e",
+      "width": 1672,
+      "height": 941
+    },
+    "hero": {
+      "src": "/projects/nova/hero.jpg?v=bd74a802f94d",
+      "width": 1672,
+      "height": 941
+    },
+    "identity": {
+      "src": "/projects/nova/identity.jpg?v=7de096c736a2",
+      "width": 1672,
+      "height": 941
+    },
+    "social": {
+      "src": "/projects/nova/social.jpg?v=42241751fb9b",
+      "width": 1672,
+      "height": 941
+    }
+  },
+  "orbit": {
+    "application-01": {
+      "src": "/projects/orbit/application-01.jpg?v=5d52977d3f60",
+      "width": 1536,
+      "height": 1024
+    },
+    "application-02": {
+      "src": "/projects/orbit/application-02.jpg?v=b0cce58cd4e3",
+      "width": 1536,
+      "height": 1024
+    },
+    "cover": {
+      "src": "/projects/orbit/cover.jpg?v=59fccafc29d8",
+      "width": 1536,
+      "height": 1024
+    },
+    "detail-01": {
+      "src": "/projects/orbit/detail-01.jpg?v=b60a0fcd97a7",
+      "width": 1536,
+      "height": 1024
+    },
+    "detail-02": {
+      "src": "/projects/orbit/detail-02.jpg?v=fcb6c45576c1",
+      "width": 1536,
+      "height": 1024
+    },
+    "hero": {
+      "src": "/projects/orbit/hero.jpg?v=fdea1c1cd149",
+      "width": 1536,
+      "height": 1024
+    },
+    "identity": {
+      "src": "/projects/orbit/identity.jpg?v=1e39c9e994ff",
+      "width": 1536,
+      "height": 1024
+    },
+    "social": {
+      "src": "/projects/orbit/social.jpg?v=cd7118447400",
+      "width": 1536,
+      "height": 1024
+    }
+  },
+  "vanta": {
+    "application-01": {
+      "src": "/projects/vanta/application-01.jpg?v=4137df3e9326",
+      "width": 1536,
+      "height": 1024
+    },
+    "application-02": {
+      "src": "/projects/vanta/application-02.jpg?v=037289852647",
+      "width": 1536,
+      "height": 1024
+    },
+    "cover": {
+      "src": "/projects/vanta/cover.jpg?v=c539a4adcc85",
+      "width": 1536,
+      "height": 1024
+    },
+    "detail-01": {
+      "src": "/projects/vanta/detail-01.jpg?v=74ce34b2b1e1",
+      "width": 1536,
+      "height": 1024
+    },
+    "detail-02": {
+      "src": "/projects/vanta/detail-02.jpg?v=7c3eeaec0167",
+      "width": 1536,
+      "height": 1024
+    },
+    "hero": {
+      "src": "/projects/vanta/hero.jpg?v=f59ebfc6213a",
+      "width": 1536,
+      "height": 1024
+    },
+    "identity": {
+      "src": "/projects/vanta/identity.jpg?v=d1ecf4ad399b",
+      "width": 1536,
+      "height": 1024
+    },
+    "social": {
+      "src": "/projects/vanta/social.jpg?v=b148cd28f1e1",
+      "width": 1536,
+      "height": 1024
+    }
+  }
+}
