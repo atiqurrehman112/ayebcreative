@@ -24,6 +24,11 @@ const description =
   "Ayeb Creative creates distinctive visual identities, branding systems and creative design for ambitious brands.";
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
+
+  verification: {
+    google: "X36PH0kU1X0QovbK6qGBboo037PiwAaCbkcRZ26JZJg",
+  },
+
   title: {
     default: "Ayeb Creative — Visual Identity & Creative Design Studio",
     template: "%s — Ayeb Creative",
